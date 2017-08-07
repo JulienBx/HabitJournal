@@ -9,9 +9,9 @@ import com.julienbx.habitjournal.configuration.JpaConfiguration;
 
 @Import(JpaConfiguration.class)
 @SpringBootApplication(scanBasePackages={"com.julienbx.habitjournal"})// same as @Configuration @EnableAutoConfiguration @ComponentScan
-public class SpringBootCRUDApp {
+public class SpringBootHabitJournalApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootCRUDApp.class, args);
+		SpringApplication.run(SpringBootHabitJournalApp.class, args);
 	}
 }

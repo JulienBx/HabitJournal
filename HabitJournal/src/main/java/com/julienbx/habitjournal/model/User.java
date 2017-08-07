@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name="APP_USER")
+@Table(name="app_user")
 public class User implements Serializable{
 
 	@Id
@@ -14,13 +14,13 @@ public class User implements Serializable{
 	private Long id;
 
 	@NotEmpty
-	@Column(name="NAME", nullable=false)
+	@Column(name="name", nullable=false)
 	private String name;
 
-	@Column(name="AGE", nullable=false)
+	@Column(name="age", nullable=false)
 	private Integer age;
 
-	@Column(name="SALARY", nullable=false)
+	@Column(name="salary", nullable=false)
 	private double salary;
 
 	public Long getId() {
